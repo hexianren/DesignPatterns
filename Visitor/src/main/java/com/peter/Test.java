@@ -10,27 +10,34 @@ public class Test {
 	   这样就完成了整个过程
 	*/
 	//对象结构角色在这里才组装上 
-	public static void main(String args[]) { 
-			List<Flower> flowers = new ArrayList<Flower>();
-			Visitor sval, sval1;
-			/*
-			   It’s almost as if I had a function to
-			   produce a Flower string representation:
-			   这个地方你可以修改以便使用另外一个具体访问者角色
-			*/
-			
-			for(int i = 0; i < 10; i++) {
-					flowers.add(FlowerGenerator.newFlower());
-			}
-			
-			sval = new BeeVisitor();
-			sval1 = new GardenerVisitor();
+	public static void main(String args[]) {
+		for (Employee e : mockEmployee()) {
+		    e.accept(new Visitor());
+		}
+	}
 
-			for (Flower flower : flowers) {
-					flower.accept(sval);
-					System.out.println(sval);
-					flower.accept(sval1);
-					System.out.println();
-			}
+	public static List<Employee> mockEmployee() {
+		List<Employee> employeeList = new ArrayList<>();
+	    CommonEmployee zhangSan = new CommonEmployee();
+	    zhangSan.setJob("Java程序");
+	    zhangSan.setName("张三");
+	    zhangSan.setSalary(1800);
+	    zhangSan.setSex(Employee.MALE);
+	    employeeList.add(zhangSan);
+
+		CommonEmployee liSi = new CommonEmployee();
+		liSi.setJob("美工");
+		liSi.setName("李四");
+		liSi.setSalary(1900);
+		liSi.setSex(Employee.FEMALE);
+		employeeList.add(liSi);
+
+		Manager wangwu = new Manager();
+		wangwu.setPerformance("管理");
+		wangwu.setName("王五");
+		wangwu.setSalary(2000);
+		wangwu.setSex(Employee.MALE);
+		employeeList.add(wangwu);
+		return employeeList;
 	}
 }
