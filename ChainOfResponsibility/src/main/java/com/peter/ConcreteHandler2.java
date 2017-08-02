@@ -7,20 +7,20 @@ package com.peter;
  *
  */
 public class ConcreteHandler2 extends Handler {
-    /**
-     * 处理方法，调用此方法处理请求
-     */
-    @Override
-    public void handleRequest(int request) {
-        /**
-         * 判断是否满足处理条件
-         * 如果满足，则处理请求
-         * 如果不满足，则交给后继者
-         */
-        if (request >= 10 && request < 20) {
-            System.out.println("处理请求: " + request + " By: " + this.getClass().getSimpleName());
-        } else if (getSuccessor() != null) {
-				getSuccessor().handleRequest(request);
-        }
-    }
+	/**
+	 * 处理方法，调用此方法处理请求
+	 */
+	@Override
+	public void handleRequest(int request) {
+		/**
+		 * 判断是否满足处理条件
+		 * 如果满足，则处理请求
+		 * 如果不满足，则交给后继者
+		 */
+		if (request >= 10 && request < 20) {
+			System.out.println("处理请求: " + request + " By: " + this.getClass().getSimpleName());
+		} else if (getSuccessor() != null) {
+			getSuccessor().handleRequest(request);
+		}
+	}
 }

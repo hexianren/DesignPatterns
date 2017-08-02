@@ -11,15 +11,15 @@ public class Test {
 
 	public static void main(String[] args) {
 		//组装责任链
-        Handler handler1 = new ConcreteHandler1();
-        Handler handler2 = new ConcreteHandler2();
-        Handler handler3 = new ConcreteHandler3();
-        handler1.setSuccessor(handler2);
-        handler2.setSuccessor(handler3);
+		Handler handler1 = new ConcreteHandler1();
+		Handler handler2 = new ConcreteHandler2();
+		Handler handler3 = new ConcreteHandler3();
+		handler1.setSuccessor(handler2);
+		handler2.setSuccessor(handler3);
 
 		int[] requests = new int[]{2, 5, 13, 22, 18, 3, 27, 20};
 		for (int i : requests) {
-        	handler1.handleRequest(i);
+			handler1.handleRequest(i);
 		}
 	}
 }
