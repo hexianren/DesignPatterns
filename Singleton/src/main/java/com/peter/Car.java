@@ -1,4 +1,4 @@
-package com.hin.singleton;
+package com.peter;
 
 /**
  * 汽车类
@@ -6,7 +6,7 @@ package com.hin.singleton;
  * 定义一个getInstance方法，只允许访问它的唯一实例
  */
 public class Car {
-	
+
 	// 静态方法为私有的，不能直接在外面new
 	private Car(){}
 	/**
@@ -18,6 +18,6 @@ public class Car {
 	}
 
 	static class SingletonHolder {
-			public static final Car INSTANCE = new Car();
+		public static final Car INSTANCE = new Car();
 	}
 }
