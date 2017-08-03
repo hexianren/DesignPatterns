@@ -8,7 +8,7 @@ public class MotoMible extends Mobile {
 
 	@Override
 	public void play() {
-		System.out.println("Moto Mobile: ");
+		System.out.print("Moto Mobile: ");
 		this.getSoft().play();
 	}
 }

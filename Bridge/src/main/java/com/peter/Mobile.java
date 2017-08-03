@@ -3,10 +3,10 @@ package com.peter;
 public abstract class Mobile {
 
 	private MobileSoft soft;
-	private String brand;
+	private String name;
 
-	public Mobile(String brand) {
-		this.brand = brand;
+	public Mobile(String name) {
+		this.name = name;
 	}
 
 	public MobileSoft getSoft() {
@@ -17,12 +17,12 @@ public abstract class Mobile {
 		this.soft = soft;
 	}
 
-	public String getBrand() {
-		return brand;
+	public String getName() {
+		return name;
 	}
 
-	public void setBrand(String brand) {
-		this.brand = brand;
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	public abstract void play();

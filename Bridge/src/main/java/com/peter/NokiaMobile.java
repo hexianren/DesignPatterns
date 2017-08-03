@@ -8,7 +8,7 @@ public class NokiaMobile extends Mobile {
 
 	@Override
 	public void play() {
-		System.out.println("Nokia Mobile: ");
+		System.out.print("Nokia Mobile: ");
 		this.getSoft().play();
 	}
 }
