@@ -1,20 +1,18 @@
 package com.peter;
 
-/**
- * 备忘录模式的测试
- */
-public class Test {  
-	public static void main(String[] args) { 
-		// 创建原始类 
-		Original origi = new Original("egg");  
-		// 创建备忘录  
-		Storage storage = new Storage(origi.createMemento());// egg被保存起来
-		// 修改原始类的状态  
-		System.out.println("初始化的状态为:" + origi.getValue());  
-		origi.setValue("niu");  
-		System.out.println("修改后的状态为:" + origi.getValue());  
-		// 回复原始类的状态  
-		origi.restoreMemento(storage.getMemento());  
-		System.out.println("恢复后的状态为:" + origi.getValue());  
+public class Test {
+	public static void main(String[] args) {
+		Originator o = new Originator();
+		Caretaker c = new Caretaker();
+
+		o.setState("On");
+		// Store internal state
+		c.saveMemento( o.createMemento() );
+
+		// Continue changing originator
+		o.setState("Off");
+
+		// Restore saved state
+		o.restoreMemento( c.retrieveMemento() );
 	}
 }
