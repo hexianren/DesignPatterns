@@ -2,28 +2,28 @@ package com.peter;
 
 public abstract class Mobile {
 
-  private MobileSoft soft;
-  private String brand;
+	private MobileSoft soft;
+	private String brand;
 
-  public Mobile(String brand) {
-    this.brand = brand;
-  }
+	public Mobile(String brand) {
+		this.brand = brand;
+	}
 
-  public MobileSoft getSoft() {
-    return soft;
-  }
+	public MobileSoft getSoft() {
+		return soft;
+	}
 
-  public void setSoft(MobileSoft soft) {
-    this.soft = soft;
-  }
+	public void setSoft(MobileSoft soft) {
+		this.soft = soft;
+	}
 
-  public String getBrand() {
-    return brand;
-  }
+	public String getBrand() {
+		return brand;
+	}
 
-  public void setBrand(String brand) {
-    this.brand = brand;
-  }
-  
-  public abstract void run();
+	public void setBrand(String brand) {
+		this.brand = brand;
+	}
+
+	public abstract void play();
 }

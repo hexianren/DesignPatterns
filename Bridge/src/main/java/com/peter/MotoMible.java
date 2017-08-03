@@ -2,14 +2,13 @@ package com.peter;
 
 public class MotoMible extends Mobile {
 
-  public MotoMible(String brand) {
-    super(brand);
-  }
+	public MotoMible(String brand) {
+		super(brand);
+	}
 
-  @Override
-  public void run() {
-    System.out.println("Moto Mobile: ");
-   this.getSoft().run();
-  }
-
+	@Override
+	public void play() {
+		System.out.println("Moto Mobile: ");
+		this.getSoft().play();
+	}
 }
