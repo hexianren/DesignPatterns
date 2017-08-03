@@ -5,17 +5,28 @@ package com.peter;
  */
 public class Person {
 
-	private State state = new HappyState();  // 状态
+	private State state;  // 状态
 	
-	public void smile(){
-		state.smile();
+
+	public void setState(State state) {
+		this.state = state;
+	}
+
+	public void smile() {
+		if (state != null) {
+			state.smile();
+		}
 	}
 	
 	public void cry(){
-		state.cry();
+		if (state != null) {
+			state.cry();
+		}
 	}
 
 	public void say(){
-		state.say();
+		if (state != null) {
+			state.say();
+		}
 	}
 }
