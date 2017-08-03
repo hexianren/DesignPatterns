@@ -34,19 +34,18 @@ public class Proxy {
 		}
 		
 		String src = 
-			"package com.hin.proxy_4;" +  rt +
+			"package com.peter;" +  rt +
 			"import java.lang.reflect.Method;" + rt +
-			"public class $proxy1 implements " + infce.getName() + " {" + rt +
-			"    public $proxy1(InvocationHandler h) {" + rt +
+			"public class Proxy1 implements " + infce.getName() + " {" + rt +
+			"    public Proxy1(InvocationHandler h) {" + rt +
 			"        this.h = h;" + rt +
 			"    }" + rt +
 			
-			"    com.hin.proxy_4.InvocationHandler h;" + rt +
+			"    com.peter.InvocationHandler h;" + rt +
 			
 			methodStr;  // 加上接口里的方法
 
-		String fileName = System.getProperty("user.dir") 
-							+ "/src/com/hin/proxy_4/$proxy1.java";
+		String fileName = "src/main/java/com/peter/Proxy1.java";
 		File f = new File(fileName);
 		FileWriter fw = new FileWriter(f);
 		fw.write(src);
@@ -62,9 +61,9 @@ public class Proxy {
 		fileMgr.close();
 		
 		//load into memory and create an instance
-		URL[] urls = new URL[] {new URL("file:/" + System.getProperty("user.dir") +"/src")};
+		URL[] urls = new URL[] {new URL("file:/" + "//src")};
 		URLClassLoader ul = new URLClassLoader(urls);
-		Class c = ul.loadClass("com.hin.proxy_4.$proxy1");
+		Class c = ul.loadClass("com.peter.Proxy1");
 		System.out.println(c);
 		
 		Constructor ctr = c.getConstructor(InvocationHandler.class);  // 获得参数为Moveable的构造方法
