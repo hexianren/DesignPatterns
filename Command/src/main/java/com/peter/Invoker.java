@@ -9,7 +9,7 @@ public class Invoker {
 	// 持有命令对象     
 	private Command command;
 
-	public void setCommand(Command command) {
+	public Invoker(Command command) {
 		this.command = command;
 	}
 	public Command getCommand() {
