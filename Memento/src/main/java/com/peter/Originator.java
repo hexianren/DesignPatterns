@@ -1,11 +1,8 @@
 package com.peter;
 
+//发起人 需要保存当前状态的类，通过createMemento生成当前状态的备忘录
 public class Originator {
 	private String state;
-
-	/** @link dependency 
-	 * @label wide*/
-	/*#Memento lnkMemento;*/
 
 	public Memento createMemento(){
 		return new Memento(state);
