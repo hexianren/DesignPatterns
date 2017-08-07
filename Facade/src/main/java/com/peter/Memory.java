@@ -1,17 +1,15 @@
 package com.peter;
 
 /**
- * Ïàµ±ÓÚSubsystemThree
- * @author Administrator
- *
+ * ç›¸å½“äºŽSubsystemThree
  */
 public class Memory {
-	
-	public void startup(){
-		System.out.println("memory startup!");
-	}
-	
-	public void shutdown(){
-		System.out.println("memory shutdown!");
-	}
+
+		public void startup(){
+				System.out.println("memory startup!");
+		}
+
+		public void shutdown(){
+				System.out.println("memory shutdown!");
+		}
 }

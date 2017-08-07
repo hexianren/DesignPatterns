@@ -1,17 +1,14 @@
 package com.peter;
 
 /**
- * Ïàµ±ÓÚSubsystemOne
- * @author Administrator
- *
+ * ç›¸å½“äºŽSubsystemOne
  */
 public class CPU {
-	
-	public void startup(){
-		System.out.println("cpu startup!");
-	}
-	
-	public void shutdown(){
-		System.out.println("cpu shutdown!");
-	}
+		public void startup(){
+				System.out.println("cpu startup!");
+		}
+
+		public void shutdown(){
+				System.out.println("cpu shutdown!");
+		}
 }

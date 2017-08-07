@@ -1,15 +1,13 @@
 package com.peter;
 
 /**
- * Íâ¹ÛÄ£Ê½µÄ²âÊÔ
- * Íâ¹ÛÄ£Ê½¾ÍÊÇ½«¶à¸öÀàµÄ¹ØÏµ·ÅÔÚÒ»¸öFacadeÀàÖĞ£¬½µµÍÁËÀàÀàÖ®¼äµÄñîºÏ¶È
- * @author Administrator
- * 2014/07/04
+ * å¤–è§‚æ¨¡å¼çš„æµ‹è¯•
+ * å¤–è§‚æ¨¡å¼å°±æ˜¯å°†å¤šä¸ªç±»çš„å…³ç³»æ”¾åœ¨ä¸€ä¸ªFacadeç±»ä¸­ï¼Œé™ä½äº†ç±»ç±»ä¹‹é—´çš„è€¦åˆåº¦
  */
 public class Test {
-	public static void main(String[] args) {
-		Computer computer = new Computer();
-		computer.startup();
-		computer.shutdown();
-	}
+		public static void main(String[] args) {
+				Computer computer = new Computer();
+				computer.startup();
+				computer.shutdown();
+		}
 }
