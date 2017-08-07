@@ -12,7 +12,8 @@ public class Test {
 
 	public static void main(String[] args) {
 		System.out.println("------ 客户要求增加一项需求------");
-		Command command = new AddRequirementCommand();
+		CodeGroup codeGroup = new CodeGroup();
+		Command command = new AddRequirementCommand(codeGroup);
 		Invoker zhangsan = new Invoker(command);
 
 		//这里可以测试一下

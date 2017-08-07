@@ -14,7 +14,8 @@ public class StoppingState extends LiftState {
 	}
 	
 	//停止状态再运行起来， 正常得很
-	@Overridepublic void run() {
+	@Override
+	public void run() {
 		context.setLiftState(Context.runningState);
 		context.getLiftState().run();
 	}

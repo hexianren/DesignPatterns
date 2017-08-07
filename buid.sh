@@ -78,10 +78,6 @@ cd Mediator/
 gradle -q run
 cd ..
 
-cd MementoWideNarrow/
-gradle -q run
-cd ..
-
 cd Prototype/
 gradle -q run
 cd ..

@@ -21,7 +21,8 @@ public class ClosingState extends LiftState {
 	}
 
 	//电梯门关着， 我就不按楼层
-	@Overridepublic void stop() {
+	@Override
+	public void stop() {
 		context.setLiftState(Context.stoppingState); //设置为停止状态
 		context.getLiftState().stop();
 	}
