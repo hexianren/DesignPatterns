@@ -12,11 +12,15 @@ public class Test {
 
 	public static void main(String[] args) {
 		System.out.println("------ 客户要求增加一项需求------");
-		CodeGroup codeGroup = new CodeGroup();
-		Command command = new AddRequirementCommand(codeGroup);
-		Invoker zhangsan = new Invoker(command);
 
+		Command commandRequire = new AddRequirementCommand(new RequirementGroup());
+		Invoker zhangsan = new Invoker(commandRequire);
 		//这里可以测试一下
 		zhangsan.runCommand();
+
+		Command commandUI = new DeleteUICommand(new UIGroup());
+		Invoker lisi = new Invoker(commandUI);
+		//这里可以测试一下
+		lisi.runCommand();
 	}
 }

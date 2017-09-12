@@ -2,8 +2,6 @@ package com.peter;
 
 /**
  * 命令发出者
- * @author Administrator
- *
  */
 public class Invoker {
 	// 持有命令对象     
@@ -12,6 +10,7 @@ public class Invoker {
 	public Invoker(Command command) {
 		this.command = command;
 	}
+
 	public Command getCommand() {
 		return command;
 	}
