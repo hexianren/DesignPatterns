@@ -16,5 +16,6 @@ public class Test {
 
 		// Restore saved state
 		o.restoreMemento(c.retrieveMemento());
+		System.out.println("Last State " + o.getState());
 	}
 }
