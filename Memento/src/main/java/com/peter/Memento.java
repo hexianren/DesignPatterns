@@ -1,5 +1,6 @@
 package com.peter;
 
+//备忘录 保存状态信息的Bean
 public class Memento {
 	private String state;
 

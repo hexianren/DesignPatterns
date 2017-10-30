@@ -1,6 +1,6 @@
 package com.peter;
 
-//负责人 用于存储备忘录，确保发起人销毁后备忘录得以保存
+//负责人 相当于磁盘，用于存储Bean，确保发起人销毁后状态得以保存
 public class Caretaker {
 	private Memento memento;
 
