@@ -8,6 +8,6 @@ public class User2 extends User {
 	
 	@Override
 	public void work() {
-		System.out.println("user2 exe!");
+		System.out.println("User2 Working!");
 	}
 }

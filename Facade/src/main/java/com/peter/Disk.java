@@ -4,12 +4,11 @@ package com.peter;
  * 相当于SubsystemTwo
  */
 public class Disk {
+	public void startup(){
+		System.out.println("disk startup!");
+	}
 
-		public void startup(){
-				System.out.println("disk startup!");
-		}
-
-		public void shutdown(){
-				System.out.println("disk shutdown!");
-		}
+	public void shutdown(){
+		System.out.println("disk shutdown!");
+	}
 }

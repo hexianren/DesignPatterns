@@ -1,6 +1,7 @@
 package com.peter;
 
 //发起人 需要保存当前状态的类，通过createMemento生成当前状态的备忘录
+//发起人负责创建备忘录还原状态
 public class Originator {
 	private String state;
 
