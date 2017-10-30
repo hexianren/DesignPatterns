@@ -4,6 +4,9 @@ public class Test {
 		Context context = new Context();
 		context.setLiftState(new ClosingState());
 		context.open();
+		context.open();
+		context.open();
+		context.run();
 		context.close();
 		context.run();
 		context.stop();

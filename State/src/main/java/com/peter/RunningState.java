@@ -21,7 +21,7 @@ public class RunningState extends LiftState {
 	//这绝对是合理的， 只运行不停止还有谁敢坐这个电梯？ ！ 估计只有上帝了
 	@Override
 	public void stop() {
-		context.setLiftState(Context.stoppingState);//环境设置为停止状态
+		context.setLiftState(new StoppingState());//环境设置为停止状态
 		context.getLiftState().stop();
 	}
 }

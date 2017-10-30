@@ -4,7 +4,7 @@ public class OpenningState extends LiftState {
 	@Override
 	public void close() {
 		//状态修改
-		context.setLiftState(Context.closeingState);
+		context.setLiftState(new ClosingState());
 		//动作委托为CloseState来执行
 		context.getLiftState().close();
 	}

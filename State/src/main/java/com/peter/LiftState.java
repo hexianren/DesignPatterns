@@ -3,8 +3,8 @@ public abstract class LiftState{
 	//定义一个环境角色， 也就是封装状态的变化引起的功能变化
 	protected Context context;
 
-	public void setContext(Context _context){
-		this.context = _context;
+	public void setContext(Context context){
+		this.context = context;
 	}
 
 	//首先电梯门开启动作
