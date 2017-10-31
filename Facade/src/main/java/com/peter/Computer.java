@@ -15,19 +15,19 @@ public class Computer {
 	}
 
 	public void startup(){
-		System.out.println("start the computer!");
+		System.out.println("Start the computer!");
 		cpu.startup();
 		memory.startup();
 		disk.startup();
-		System.out.println("start computer finished!");
+		System.out.println("Start computer finished!");
 	}
 
 	public void shutdown(){
-		System.out.println("begin to close the computer!");
+		System.out.println("Begin to close the computer!");
 		cpu.shutdown();
 		memory.shutdown();
 		disk.shutdown();
-		System.out.println("computer closed!");
+		System.out.println("Computer closed!");
 	}
 }
 

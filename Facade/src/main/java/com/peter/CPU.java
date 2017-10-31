@@ -5,10 +5,10 @@ package com.peter;
  */
 public class CPU {
 	public void startup(){
-		System.out.println("cpu startup!");
+		System.out.println("Cpu startup!");
 	}
 
 	public void shutdown(){
-		System.out.println("cpu shutdown!");
+		System.out.println("Cpu shutdown!");
 	}
 }
