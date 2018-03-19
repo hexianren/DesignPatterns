@@ -14,13 +14,11 @@ public class Composite extends Component {
     List<Component> list = new ArrayList<Component>();  
 
     // 添加节点 添加部件  
-    @Override
     public void add(Component c) {  
         list.add(c);  
     }  
 
     // 删除节点 删除部件  
-    @Override  
     public void remove(Component c) {   
         list.remove(c);  
     }  

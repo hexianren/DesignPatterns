@@ -1,0 +1,11 @@
+apply plugin: 'java'
+apply plugin: 'application'  
+  
+mainClassName = 'com.peter.Test' // main() 的路
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+}
