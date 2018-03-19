@@ -8,14 +8,13 @@ import java.util.Random;
 public class Tank implements Moveable {
 
 	@Override
-	public int move() {
+	public void move(final long distance) {
 		System.out.println("Tank Moving...");
 		try {
 			Thread.sleep(new Random().nextInt(5000));
+			System.out.println("Tank Moved " + distance + "KM");
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-		//移动10KM
-		return 10;
-	}	
+	}
 }

@@ -22,7 +22,7 @@ public class TimeHandler implements InvocationHandler {
 		Object result;
 		long start = System.currentTimeMillis();
 		System.out.println("Start Time: " + start);
-		result = method.invoke(target);  // 调用被代理对象的M方法
+		result = method.invoke(target, args);  // 调用被代理对象的M方法
 		long end = System.currentTimeMillis();
 		System.out.println("Spent time: " + (end - start));
 		return result;

@@ -1,5 +1,5 @@
 package com.peter;
 
 public interface Moveable {
-	int move();
+	void move(final long distance);
 }

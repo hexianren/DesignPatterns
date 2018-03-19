@@ -14,7 +14,6 @@ public class Test {
 		Tank t = new Tank();  // 被代理对象
 		InvocationHandler h = new TimeHandler(t);  // 时间上的代理
 		Moveable m = (Moveable) Proxy.newProxyInstance(t.getClass().getClassLoader(), t.getClass().getInterfaces(), h);
-		int distance = m.move();
-		System.out.println("Move " + distance + "KM");
+		m.move(10);
 	}
 }
