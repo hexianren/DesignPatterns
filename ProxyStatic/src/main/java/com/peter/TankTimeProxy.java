@@ -17,5 +17,4 @@ public class TankTimeProxy implements Moveable{
 		v.move();
 		System.out.println("坦克停下来了...");
 	}
-
 }

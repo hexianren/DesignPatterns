@@ -8,12 +8,14 @@ import java.util.Random;
 public class Tank implements Moveable {
 
 	@Override
-	public void move() {
+	public int move() {
 		System.out.println("Tank Moving...");
 		try {
-			Thread.sleep(new Random().nextInt(10000));
+			Thread.sleep(new Random().nextInt(5000));
 		} catch (InterruptedException e) {
 			e.printStackTrace();
-		}	
+		}
+		//移动10KM
+		return 10;
 	}	
 }
