@@ -8,8 +8,7 @@ package com.peter;
 
 public class Test {  
     public static void main(String[] args) {  
-        ICalculator cal = new Plus();  // 相加策略
-        int result = cal.calculate(2, 2);  
-        System.out.println(result);
+	Context context = new Context(new Plus());
+        System.out.println("Result " + context.exec(1,2));
     }  
 }
