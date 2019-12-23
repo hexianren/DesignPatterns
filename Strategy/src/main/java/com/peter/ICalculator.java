@@ -7,5 +7,5 @@ package com.peter;
  *
  */
 public interface ICalculator {  
-    public int calculate(String exp);  
+    public int calculate(int a, int b);  
 }

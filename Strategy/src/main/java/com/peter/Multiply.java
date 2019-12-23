@@ -6,11 +6,9 @@ package com.peter;
  * @author Administrator
  *
  */
-public class Multiply extends AbstractCalculator implements ICalculator {  
-	  
+public class Multiply implements ICalculator {  
     @Override  
-    public int calculate(String exp) {  
-        int arrayInt[] = split(exp,"\\*");  
-        return arrayInt[0]*arrayInt[1];  
+    public int calculate(int a, int b) {  
+	    return a * b;
     }  
 }

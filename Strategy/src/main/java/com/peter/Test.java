@@ -8,9 +8,8 @@ package com.peter;
 
 public class Test {  
     public static void main(String[] args) {  
-        String exp = "2+8";  
         ICalculator cal = new Plus();  // 相加策略
-        int result = cal.calculate(exp);  
+        int result = cal.calculate(2, 2);  
         System.out.println(result);
     }  
 }
