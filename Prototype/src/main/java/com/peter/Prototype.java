@@ -6,8 +6,8 @@ package com.peter;
 public class Prototype implements Cloneable {
  
      private String name;
-     
-     public void setName(String name) {
+
+     public Prototype(String name) {
          this.name = name;
      }
      
