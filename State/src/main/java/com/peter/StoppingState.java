@@ -3,7 +3,7 @@ public class StoppingState extends LiftState {
 	//停止状态关门？ 电梯门本来就是关着的！
 	@Override
 	public void close() {
-		//do nothing;
+		System.out.println("ERROR 电梯停止了本来就是关门状态...");
 	}
 	
 	//停止状态， 开门， 那是要的！

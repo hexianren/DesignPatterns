@@ -5,7 +5,6 @@ package com.peter;
  * 定义了同事对象到中介者对象的接口
  */
 public interface Mediator {
-
 	public void createMediator();
 
 	public void workAll();

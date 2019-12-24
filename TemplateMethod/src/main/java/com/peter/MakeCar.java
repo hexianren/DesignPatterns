@@ -1,7 +1,6 @@
 package com.peter;
 
 public class MakeCar extends MakeVehicle{
-
 	// method1
 	@Override
 	public void makeHead() {

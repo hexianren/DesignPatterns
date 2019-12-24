@@ -18,11 +18,11 @@ public class OpenningState extends LiftState {
 	//门开着时电梯就运行跑， 这电梯， 吓死你！
 	@Override
 	public void run() {
-		//do nothing;
+		System.out.println("ERROR 电梯门开启不能运行...");
 	}
 
 	//开门还不停止？
 	public void stop() {
-		//do nothing;
+		System.out.println("ERROR 电梯门开启本来就是停止状态...");
 	}
 }

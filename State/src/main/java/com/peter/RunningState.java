@@ -4,12 +4,13 @@ public class RunningState extends LiftState {
 	@Override
 	public void close() {
 		//do nothing
+		System.out.println("ERROR 电梯运行中本来就是关门状态...");
 	}
 
 	//运行的时候开电梯门？ 你疯了！ 电梯不会给你开的
 	@Override
 	public void open() {
-		//do nothing
+		System.out.println("ERROR 电梯运行中不能开门...");
 	}
 
 	//这是在运行状态下要实现的方法

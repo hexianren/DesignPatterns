@@ -1,7 +1,6 @@
 package com.peter;
 
 public class MakeBus extends MakeVehicle{
-
 	// method1
 	@Override
 	public void makeHead() {

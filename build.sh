@@ -50,7 +50,11 @@ cd Visitor/
 gradle -q run
 cd ..
 
-cd Adapter/
+cd ClassAdapter/
+gradle -q run
+cd ..
+
+cd ObjectAdapter/
 gradle -q run
 cd ..
 
