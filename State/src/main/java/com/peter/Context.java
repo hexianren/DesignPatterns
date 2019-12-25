@@ -1,31 +1,25 @@
 package com.peter;
 
 public class Context {
-	//定义一个当前电梯状态
-	private LiftState liftState;
-	public LiftState getLiftState() {
-		return liftState;
+	public final static State STATE1 = new ConcreteStateA();
+	public final static State STATE2 = new ConcreteStateB();
+
+	private State currentState;
+
+	public State getState() {
+		return currentState;
 	}
 
-	public void setLiftState(LiftState liftState) {
-		this.liftState = liftState;
-		//把当前的环境通知到各个实现类中
-		this.liftState.setContext(this);
+	public void setState(State currentState) {
+		this.currentState = currentState;
+		this.currentState.setContext(this);
 	}
 
-	public void open(){
-		this.liftState.open();
+	public void handle1() {
+		this.currentState.handle1();
 	}
 
-	public void close(){
-		this.liftState.close();
-	}
-
-	public void run(){
-		this.liftState.run();
-	}
-
-	public void stop(){
-		this.liftState.stop();
+	public void handle2() {
+		this.currentState.handle2();
 	}
 }

@@ -1,24 +1,20 @@
 package com.peter;
 
 public class Test {
-
-	/**
-	 * @param args
-	 */
 	public static void main(String[] args) {
-		MobileSoft game =  new MobileGame();
-		MobileSoft mp3 =  new MobileMp3();
+		Color red = new Red();
+		Color blue = new Blue();
 
-		Mobile nokia = new NokiaMobile("Nokia");
-		nokia.setSoft(game);
-		nokia.play();
-		nokia.setSoft(mp3);
-		nokia.play();
+		Shape circle = new Circle(red);
+		circle.draw();
 
-		Mobile moto = new MotoMible("Moto");
-		moto.setSoft(game);
-		moto.play();
-		moto.setSoft(mp3);
-		moto.play();
+		circle = new Circle(blue);
+		circle.draw();
+
+		Shape rect = new Rectangle(red);
+		rect.draw();
+
+		rect = new Rectangle(blue);
+		circle.draw();
 	}
 }
