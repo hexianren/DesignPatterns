@@ -7,6 +7,5 @@ package com.peter;
  *
  */
 public abstract class Flyweight {
-	
 	public abstract void operation();
 }

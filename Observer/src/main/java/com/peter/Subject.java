@@ -1,16 +1,21 @@
 package com.peter;
 
-public interface Subject {
-	
-	/*增加观察者*/
-	public void add(Observer observer);
-	
-	/*删除观察者*/
-	public void del(Observer observer);
-	
-	/*通知所有的观察者*/
-	public void notifyObservers();
-	
-	/*自身的操作*/
-	public void operation();
+import java.util.*;
+
+public abstract class Subject {
+	private List<Observer> obsList = new LinkedList<>();
+
+	public void addObserver(Observer o) {
+		obsList.add(o);
+	}
+
+	public void delObserver(Observer o) {
+		obsList.remove(o);
+	}
+
+	public void notifyObservers() {
+		for (Observer o : obsList) {
+			o.update();
+		}
+	}
 }

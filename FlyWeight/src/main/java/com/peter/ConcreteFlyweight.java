@@ -6,14 +6,13 @@ package com.peter;
  *
  */
 public class ConcreteFlyweight extends Flyweight {
-	
-	private String string;  
-	public ConcreteFlyweight(String str){  
-		string = str;  
+	private String key;  
+	public ConcreteFlyweight(String key){  
+		this.key = key;
 	}
 
 	@Override
 	public void operation() {
-		System.out.println("ConcreteFlyweight : " + string);
+		System.out.println("ConcreteFlyweight : " + key);
 	}
 }
