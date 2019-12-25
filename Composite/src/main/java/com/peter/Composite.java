@@ -3,11 +3,6 @@ package com.peter;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * 定义有子节点的行为，用来存储子部件，在Component接口中实现与子部件有关的操作
- * @author Administrator
- *
- */
 public class Composite extends Component {
  
     // 用来保存节点的子节点  

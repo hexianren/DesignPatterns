@@ -1,10 +1,5 @@
 package com.peter;
 
-/**
- * 在组合中表示叶节点对象，叶节点没有子节点
- * @author Administrator
- *
- */
 public class Leaf extends Component{
 	// 叶子节点不具备添加的能力，所以不实现  
 	@Override  
